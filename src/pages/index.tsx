@@ -18,7 +18,7 @@ export default function Home() {
   
   async function createNews() {
     setLoading(true);
-    const newsGenerated = await generatemNews(6);
+    const newsGenerated = await generatemNews(3);
     localStorage.setItem("news", JSON.stringify(newsGenerated));
     setNews(newsGenerated);
     setLoading(false);
